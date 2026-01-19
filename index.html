@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jason Haas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
 
-<header>
-  <h1>Jason Haas</h1>
-  <p>Engineering → Quantitative Finance</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.pdf">Resume</a>
-  </nav>
-</header>
+    <header class="topbar">
+      <div class="brand">
+        <p class="name">Jason Haas</p>
+        <p class="tag">Engineering → Quantitative Finance</p>
+      </div>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </header>
 
-<main>
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I’m an engineering student with a background in manufacturing automation
-      and real-time monitoring systems, transitioning into quantitative finance.
-      My experience centers on detecting failure, optimizing systems under
-      constraints, and learning new technical domains quickly.
-    </p>
-    <p>
-      I’m interested in market making, quantitative research, and
-      systems-driven trading strategies.
-    </p>
-  </section>
+    <section class="hero">
+      <h1>Engineering → Quant Finance</h1>
+      <p>
+        I build signal-driven systems that operate under real constraints. My background includes
+        automation and real-time monitoring (instrumentation, failure detection, and throughput consistency).
+        I’m transitioning into quantitative finance with a focus on market making and systematic trading.
+      </p>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>
-      <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
-    </p>
-  </section>
-</main>
+      <div class="cta">
+        <a class="button" href="projects.html">View projects</a>
+        <a class="button" href="resume.pdf">Open resume (PDF)</a>
+        <a class="button" href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button" href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="small" style="margin-top:10px;">
+        Tip: Keep this site minimal. The goal is to make it easy to verify your work and contact you.
+      </p>
+    </section>
 
+    <div class="grid">
+      <section class="card">
+        <h2>What I’ve done</h2>
+        <ul>
+          <li>Designed and deployed sensor-based monitoring to detect overheating and prevent downtime events.</li>
+          <li>Developed automation workflows integrating CNC handling, baths, drying, and staging.</li>
+          <li>Trusted with open-ended work across three consecutive summers; learned domains quickly and shipped.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Quick links</h2>
+        <p><a class="accent" href="projects.html">Projects</a></p>
+        <p><a class="accent" href="resume.pdf">Resume (PDF)</a></p>
+        <p><a class="accent" href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        <p><a class="accent" href="mailto:your.email@example.com">Email</a></p>
+        <p class="small">Replace the placeholders with your real links.</p>
+      </section>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Jason Haas
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
